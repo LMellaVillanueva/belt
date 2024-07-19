@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustDesert</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <main class="allContainer">
+
+        <nav>
+            <h1>Just<span>Dessert</span></h1>
+            <ul class="buttons">
+                <li><button class="join" onclick="join(this)">Join</button></li>
+                <li><button class="login">Login</button></li>
+            </ul>
+        </nav>
+
+        <section class="postNav">
+            <div class="searchBar">
+                <input type="text" placeholder="SEARCH" class="inputSearch" onchange="search(this)">
+                <button class="buttonSearch" onclick="go()">GO</button>
+            </div>
+            <div class="imgs">
+                <article class="gapImg">
+                    <img src="./imgs/cake.png" alt="cake" width="100" class="borderImg">
+                    <p class="dessert">Cake</p>
+                </article>
+
+                <article class="gapImg">
+                    <img src="./imgs/cookie.png" alt="cookies" width="100" class="borderImg">
+                    <p class="dessert">Cookies</p>
+                </article>
+
+                <article class="gapImg">
+                    <img src="./imgs/ice-cream.png" alt="iceCream" width="100" class="borderImg">
+                    <p class="dessert">Ice Cream</p>
+                </article>
+
+                <article class="gapImg">
+                    <img src="./imgs/pie.png" alt="pie" width="100" class="borderImg">
+                    <p class="dessert">Pie</p>
+                </article>
+            </div>
+        </section>
+
+        <article class="forYou">
+
+            <main class="recipe">
+
+                <h2 class="titleR">Recipe of the Day</h2>
+                <img src="./imgs/orange-tart.jpg" alt="orange-tart" width="450" class="tart">
+                
+                <section class="desRecipe">
+                    <header>
+                        <p>Orange Tea Jelly Tart</p>
+                        <p>By: <a href="">yuripiano</a></p>
+                    </header>
+                    <button class="like" onclick="like('likeNumber1')">
+                        <img src="./imgs/heart.png" alt="heart" width="25">
+                        <p id="likeNumber1">68</p>
+                </button>
+            </section>
+            <a href="">See Full Recipe</a>
+        </main>
+        
+        <aside>
+            <h3>Recommended for you:</h3>
+            <section class="aside">
+
+                <div class="line"></div>
+                <img src="./imgs/macarons.jpg" alt="macarons" width="200" class="imgForYou">
+                <div class="desForYou">
+                    <header>
+                        <p>Macarons</p>
+                        <p>By: <a href="">EmilieW</a></p>
+                    </header>
+                <button class="likeW" onclick="like('likeNumber2')">
+                    <img src="./imgs/heart.png" alt="heart" width="25">
+                    <p id="likeNumber2">212</p>
+                </button>
+            </div>
+            <img src="./imgs/creme-brulee.jpg" alt="creme-brulee" width="200" class="imgForYou">
+            <div class="desForYou">
+                <header>
+                    <p>Crème brülée</p>
+                    <p>By: <a href="">MarisaG</a></p>
+                </header>
+                <button class="likeW" onclick="like('likeNumber3')">
+                    <img src="./imgs/heart.png" alt="heart" width="25">
+                    <p id="likeNumber3">32</p>
+                </button>
+            </div>
+        </section>
+            
+        </aside>
+    </article>
+</main>
+
+</body>
+</html>
